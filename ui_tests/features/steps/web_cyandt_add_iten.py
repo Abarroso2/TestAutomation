@@ -13,7 +13,7 @@ def step_impl(context):
 
 @when(u'i verify the cart')
 def step_impl(context):
-    context.browser.find_element_by_xpath("//div[@id='layer_cart']/div/div[2]/div[4]/span/span").click()
+    context.browser.find_element_by_xpath("//header[@id='header']/div[3]/div/div/div[3]/div/a/b").click()
 
 
 @then(u'the dress should be in the cart')
