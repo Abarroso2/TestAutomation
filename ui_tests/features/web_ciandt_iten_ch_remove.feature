@@ -1,7 +1,8 @@
 @web @ciandt
 Feature: Buying a dress
-    As an user previously singed in, i want to add a dress to the cart
-    Acceptance criteria: i must be able to see the chosen dress into the cart
+    As an user previously singed in, i want to add some dresses to the cart
+    I want to remove one of then from the cart
+    Acceptance criteria: i must be able to see the remaining dress or dresses into the cart
 
     Scenario: Add a dress at the cart
         Given web address "http://automationpractice.com/index.php"
