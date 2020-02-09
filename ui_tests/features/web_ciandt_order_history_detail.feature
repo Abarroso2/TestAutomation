@@ -5,7 +5,7 @@ Feature: Order History Details
    As i select an order in the history i ante to see the details
    Acceptance criteria: the page Order History should display the orders at list and i should be able to se it's details 
 
-    Scenario: My account
+    Scenario: Order History Details
         Given web address "http://automationpractice.com/index.php"
         Given login name "allan.barroso@outlook.com" and password newstar1541
         When i press the sing in button

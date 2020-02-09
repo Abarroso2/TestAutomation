@@ -6,7 +6,7 @@ Feature: Reorder
    I want to select an order in the history to reorder itself
    Acceptance criteria: the page Order History should display the orders at list and i should be able to se it's details 
 
-    Scenario: My account
+    Scenario: Reorder
         Given web address "http://automationpractice.com/index.php"
         Given login name "allan.barroso@outlook.com" and password newstar1541
         When i press the sing in button
