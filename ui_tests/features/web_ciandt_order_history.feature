@@ -1,5 +1,5 @@
 @web @ciandt
-Feature: My account page
+Feature: Order History
 
    As an user logged i want to navigate to Order History page
    Acceptance criteria: the page Order History should display the options 
