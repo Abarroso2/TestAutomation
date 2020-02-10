@@ -1,0 +1,11 @@
+1581127499758	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemJvxcY"
+1581127500540	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581127500541	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581127500541	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581127500541	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource:///modules/sessionstore/SessionStore.jsm, line 1325: uncaught exception: 2147746065
+1581127505065	Marionette	INFO	Listening on port 32967
+1581127505071	Marionette	WARN	TLS certificate errors will be ignored for this session
+1581127508573	Marionette	INFO	Stopped listening on port 32967
+JavaScript error: https://duckduckgo.com/d2744.js, line 1: TypeError: DDG.vqd is undefined
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 670: TypeError: this.tablesData[table] is undefined
