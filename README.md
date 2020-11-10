@@ -16,7 +16,7 @@ alll the tests.feature in that folder
 It also should run at PyCharm.
 But actualy it was made in vscode for linux
 
-opensuse leap 15.1
+Debian Linux
 
 
 BRs
