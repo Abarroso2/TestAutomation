@@ -16,10 +16,14 @@ def step_impl(context):
 @then(u'the users must be displayed')
 def step_impl(context):
     context.usersresponse = requests.get(BASE_URL, 'users')
+    
     if context.usersresponse.ok:
+        
         assert(context.usersresponse != None)
         return context.usersresponse
+    
     else:
+        
         return None
     
   

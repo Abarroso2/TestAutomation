@@ -10,10 +10,19 @@ def step_impl(context):
 
     response = json.loads(call.text)
 
+    valid_mail = '0'
+
     for user in response:
         
         if (re.match(regex, user['email'])):
-            assert True
-        else:
-            AssertionError()
-            print("Invalid user e-mail")
+            valid_mail = valid_mail + '1' 
+        
+    
+    if valid_mail == 0:
+
+        AssertionError()
+        print("Invalid user e-mail")
+    
+    else:
+        
+        assert True
