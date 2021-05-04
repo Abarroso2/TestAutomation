@@ -8,8 +8,6 @@ def step_impl(context):
 
     call = requests.get('https://jsonplaceholder.typicode.com/users/')
 
-    print(call.json())
-
     response = json.loads(call.text)
 
     for user in response:
