@@ -1,10 +1,21 @@
 import requests
 import re
+import json
 
 @then(u'the users mails must be valid')
 def step_impl(context):
     regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
-    mail=requests.get('https://jsonplaceholder.typicode.com/users/{email}').text
 
-    if mail != None:
-        assert(re.match(regex, mail))
+    call = requests.get('https://jsonplaceholder.typicode.com/users/')
+
+    print(call.json())
+
+    response = json.loads(call.text)
+
+    for user in response:
+        
+        if (re.match(regex, user['email'])):
+            assert True
+        else:
+            AssertionError()
+            print("Invalid user e-mail")
