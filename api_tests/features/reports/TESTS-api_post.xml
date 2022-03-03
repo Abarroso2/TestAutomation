@@ -1,0 +1,12 @@
+<testsuite errors="0" failures="0" hostname="abarroso.remote.csb" name="api_post.Post" skipped="0" tests="1" time="0.700654" timestamp="2022-02-28T05:45:42.929686"><testcase classname="api_post.Post" name="Post" status="passed" time="0.700654"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Post
+    Given connect with api ... passed in 0.133s
+    When request /users ... passed in 0.150s
+    Then post the new name and verify the match ... passed in 0.417s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

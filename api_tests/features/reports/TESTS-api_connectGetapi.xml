@@ -1,0 +1,12 @@
+<testsuite errors="0" failures="0" hostname="abarroso.remote.csb" name="api_connectGetapi.test api connection" skipped="0" tests="1" time="0.723043" timestamp="2022-02-28T05:45:42.221854"><testcase classname="api_connectGetapi.test api connection" name="API connection" status="passed" time="0.723043"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: API connection
+    Given connect with api ... passed in 0.116s
+    When request /users ... passed in 0.497s
+    Then the users must be displayed ... passed in 0.111s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

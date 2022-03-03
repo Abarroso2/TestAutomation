@@ -1,0 +1,12 @@
+<testsuite errors="0" failures="0" hostname="abarroso.remote.csb" name="api_usermail_verify.verify mail of users" skipped="0" tests="1" time="0.792397" timestamp="2022-02-28T05:45:44.443884"><testcase classname="api_usermail_verify.verify mail of users" name="API mail" status="passed" time="0.792397"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: API mail
+    Given connect with api ... passed in 0.132s
+    When request /users ... passed in 0.137s
+    Then the users mails must be valid ... passed in 0.523s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
