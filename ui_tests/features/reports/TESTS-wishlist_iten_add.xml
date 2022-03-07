@@ -1,0 +1,40 @@
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="wishlist_iten_add.Wishlist" skipped="0" tests="1" time="19.224653" timestamp="2022-03-06T22:46:14.243290"><testcase classname="wishlist_iten_add.Wishlist" name="Wishlist add iten" status="failed" time="19.224653"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<![CDATA[
+Failing step: When i select a dress and add it to wishlist ... failed in 0.035s
+Location: wishlist_iten_add.feature:11
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps/wishlist_iten_add.py", line 8, in step_impl
+    context.browser.find_element_by_xpath("//div[@id='center_column']/ul/li/div/div[2]/div[2]/a[2]/span").click()
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=98.0.4758.80)
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Wishlist add iten
+    Given web address "http://automationpractice.com/index.php" ... passed in 8.223s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 2.637s
+    When i press the sing in button ... passed in 2.098s
+    When i navigate to dress session ... passed in 6.231s
+    When i select a dress and add it to wishlist ... failed in 0.035s
+    When i select a second dress and add it to wishlist ... skipped in 0.000s
+    When i navigate to the wishlist ... skipped in 0.000s
+    Then the itens should be in the wishlist ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

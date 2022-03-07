@@ -1,0 +1,40 @@
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="reorder.Reorder" skipped="0" tests="1" time="11.721547" timestamp="2022-03-06T22:45:40.498305"><testcase classname="reorder.Reorder" name="Reorder" status="failed" time="11.721547"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<![CDATA[
+Failing step: When i select an iten in the list and click on it datails ... failed in 0.036s
+Location: reorder.feature:15
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps/order_history_detail.py", line 3, in step_impl
+    context.browser.find_element_by_xpath("//table[@id='order-list']/tbody/tr/td/span").click()
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=98.0.4758.80)
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Reorder
+    Given web address "http://automationpractice.com/index.php" ... passed in 3.878s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 1.861s
+    When i press the sing in button ... passed in 2.654s
+    When i navigate to my account page ... passed in 1.004s
+    When i navigate to my order history ... passed in 2.288s
+    When i select an iten in the list and click on it datails ... failed in 0.036s
+    When i proceed a reorder of an iten ... skipped in 0.000s
+    Then the order complete page should be displayed ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

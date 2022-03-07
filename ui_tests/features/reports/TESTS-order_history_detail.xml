@@ -1,0 +1,39 @@
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="order_history_detail.Order History Details" skipped="0" tests="1" time="11.771874" timestamp="2022-03-06T22:45:15.062793"><testcase classname="order_history_detail.Order History Details" name="Order History Details" status="failed" time="11.771874"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<![CDATA[
+Failing step: When i select an iten in the list and click on it datails ... failed in 0.034s
+Location: order_history_detail.feature:14
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
+    match.run(runner.context)
+  File "/usr/local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "steps/order_history_detail.py", line 3, in step_impl
+    context.browser.find_element_by_xpath("//table[@id='order-list']/tbody/tr/td/span").click()
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=98.0.4758.80)
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Order History Details
+    Given web address "http://automationpractice.com/index.php" ... passed in 4.050s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 2.308s
+    When i press the sing in button ... passed in 1.471s
+    When i navigate to my account page ... passed in 1.147s
+    When i navigate to my order history ... passed in 2.764s
+    When i select an iten in the list and click on it datails ... failed in 0.034s
+    Then i should be able to see the details about the item selected ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

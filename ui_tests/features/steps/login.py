@@ -10,6 +10,7 @@ def step_impl(context):
 
 @given(u'login name "allan.barroso@outlook.com" and password newstar1541')
 def step_impl(context):
+    context.browser.maximize_window()
     context.browser.find_element_by_link_text("Sign in").click()
     context.browser.find_element_by_id("email").click()
     context.browser.find_element_by_id("email").clear()
@@ -17,8 +18,7 @@ def step_impl(context):
     context.browser.find_element_by_id("passwd").click()
     context.browser.find_element_by_id("passwd").clear()
     context.browser.find_element_by_id("passwd").send_keys("newstar1541")
-    #context.browser.find_element_by_xpath("//button[@id='SubmitLogin']/span").click()
-    
+        
 @when(u'i press the sing in button')
 def step_impl(context):
     context.browser.find_element_by_xpath("//button[@id='SubmitLogin']/span").click()
