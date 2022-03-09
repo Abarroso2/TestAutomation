@@ -1,6 +1,6 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="iten_ch_remove.Buying a dress remove item" skipped="0" tests="1" time="9.276485" timestamp="2022-03-06T22:44:30.449208"><testcase classname="iten_ch_remove.Buying a dress remove item" name="Add a dress at the cart" status="failed" time="9.276485"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="iten_ch_remove.Buying a dress remove item" skipped="0" tests="1" time="55.523803" timestamp="2022-03-09T09:14:28.009164"><testcase classname="iten_ch_remove.Buying a dress remove item" name="Add a dress at the cart" status="failed" time="55.523803"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
 <![CDATA[
-Failing step: When i add the Printed Dress to cart ... failed in 0.032s
+Failing step: When i add the Printed Dress to cart ... failed in 0.034s
 Location: iten_ch_remove.feature:12
 Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
@@ -25,11 +25,11 @@ selenium.common.exceptions.ElementNotInteractableException: Message: element not
 <![CDATA[
 @scenario.begin
   Scenario: Add a dress at the cart
-    Given web address "http://automationpractice.com/index.php" ... passed in 3.276s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 1.754s
-    When i press the sing in button ... passed in 1.631s
-    When i navigate to dresses section ... passed in 2.583s
-    When i add the Printed Dress to cart ... failed in 0.032s
+    Given web address "http://automationpractice.com/index.php" ... passed in 12.556s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 15.321s
+    When i press the sing in button ... passed in 16.586s
+    When i navigate to dresses section ... passed in 11.027s
+    When i add the Printed Dress to cart ... failed in 0.034s
     When i add the Printed Chiffon Dress to cart ... skipped in 0.000s
     When i remove Printed Dress from cart ... skipped in 0.000s
     When i verify the cart ... skipped in 0.000s

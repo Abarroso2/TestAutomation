@@ -1,12 +1,12 @@
-<testsuite errors="0" failures="0" hostname="abarroso.remote.csb" name="myaccount.My account page" skipped="0" tests="1" time="7.799302" timestamp="2022-03-06T22:44:49.854768"><testcase classname="myaccount.My account page" name="My account page" status="passed" time="7.799302"><system-out>
+<testsuite errors="0" failures="0" hostname="abarroso.remote.csb" name="myaccount.My account page" skipped="0" tests="1" time="56.970806" timestamp="2022-03-09T09:16:12.434499"><testcase classname="myaccount.My account page" name="My account page" status="passed" time="56.970806"><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: My account page
-    Given web address "http://automationpractice.com/index.php" ... passed in 3.775s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 1.731s
-    When i press the sing in button ... passed in 1.471s
-    When i navigate to my account page ... passed in 0.798s
-    Then i should see the page with the options to my account ... passed in 0.026s
+    Given web address "http://automationpractice.com/index.php" ... passed in 30.160s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 10.041s
+    When i press the sing in button ... passed in 8.898s
+    When i navigate to my account page ... passed in 7.835s
+    Then i should see the page with the options to my account ... passed in 0.037s
 
 @scenario.end
 --------------------------------------------------------------------------------

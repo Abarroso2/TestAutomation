@@ -1,6 +1,6 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="reorder.Reorder" skipped="0" tests="1" time="11.721547" timestamp="2022-03-06T22:45:40.498305"><testcase classname="reorder.Reorder" name="Reorder" status="failed" time="11.721547"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="reorder.Reorder" skipped="0" tests="1" time="16.907396" timestamp="2022-03-09T09:18:05.685466"><testcase classname="reorder.Reorder" name="Reorder" status="failed" time="16.907396"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
 <![CDATA[
-Failing step: When i select an iten in the list and click on it datails ... failed in 0.036s
+Failing step: When i select an iten in the list and click on it datails ... failed in 0.034s
 Location: reorder.feature:15
 Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
@@ -25,12 +25,12 @@ selenium.common.exceptions.ElementNotInteractableException: Message: element not
 <![CDATA[
 @scenario.begin
   Scenario: Reorder
-    Given web address "http://automationpractice.com/index.php" ... passed in 3.878s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 1.861s
-    When i press the sing in button ... passed in 2.654s
-    When i navigate to my account page ... passed in 1.004s
-    When i navigate to my order history ... passed in 2.288s
-    When i select an iten in the list and click on it datails ... failed in 0.036s
+    Given web address "http://automationpractice.com/index.php" ... passed in 5.329s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 3.032s
+    When i press the sing in button ... passed in 3.798s
+    When i navigate to my account page ... passed in 1.501s
+    When i navigate to my order history ... passed in 3.213s
+    When i select an iten in the list and click on it datails ... failed in 0.034s
     When i proceed a reorder of an iten ... skipped in 0.000s
     Then the order complete page should be displayed ... skipped in 0.000s
 

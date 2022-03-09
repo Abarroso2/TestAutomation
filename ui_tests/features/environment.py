@@ -17,19 +17,19 @@ def before_scenario(context, scenario):
 
   #   context.browser.implicitly_wait(10)
 
-        capabilities = {
-          "browserName": "chrome",
-          "browserVersion": "98.0",
-          "selenoid:options": {
+      capabilities = {
+        "browserName": "chrome",
+        "browserVersion": "98.0",
+        "selenoid:options": {
             "enableVNC": True,
-            "enableVideo": False,
+            "enableVideo": True,
             "startMaximized": True
                         }
                             }
 
-        context.browser = webdriver.Remote(
-        command_executor="http://localhost:4444/wd/hub",
-        desired_capabilities=capabilities)
+      context.browser = webdriver.Remote(
+      command_executor="http://localhost:4444/wd/hub",
+      desired_capabilities=capabilities)
 
 
  

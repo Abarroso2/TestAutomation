@@ -1,23 +1,23 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="iten_ch_add.Buying a dress" skipped="0" tests="1" time="11.01646" timestamp="2022-03-06T22:44:20.102850"><testcase classname="iten_ch_add.Buying a dress" name="Add a dress at the cart" status="failed" time="11.01646"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="iten_ch_add.Buying a dress" skipped="0" tests="1" time="16.182021" timestamp="2022-03-09T09:13:30.990468"><testcase classname="iten_ch_add.Buying a dress" name="Add a dress at the cart" status="failed" time="16.182021"><error message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[id=&quot;email&quot;]&quot;}&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="NoSuchElementException">
 <![CDATA[
-Failing step: When i add the Printed Dress to cart ... failed in 0.034s
-Location: iten_ch_add.feature:11
+Failing step: Given login name "allan.barroso@outlook.com" and password newstar1541 ... failed in 6.245s
+Location: iten_ch_add.feature:8
 Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
     match.run(runner.context)
   File "/usr/local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
     self.func(context, *args, **kwargs)
-  File "steps/add_iten.py", line 8, in step_impl
-    context.browser.find_element_by_xpath("//div[@id='center_column']/ul/li/div/div[2]/div[2]/a/span").click()
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
-    self._execute(Command.CLICK_ELEMENT)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
-    return self._parent.execute(command, params)
+  File "steps/login.py", line 15, in step_impl
+    context.browser.find_element_by_id("email").click()
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+    'value': value})['value']
   File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
   File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="email"]"}
   (Session info: chrome=98.0.4758.80)
 
 ]]>
@@ -25,11 +25,11 @@ selenium.common.exceptions.ElementNotInteractableException: Message: element not
 <![CDATA[
 @scenario.begin
   Scenario: Add a dress at the cart
-    Given web address "http://automationpractice.com/index.php" ... passed in 3.557s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 2.460s
-    When i press the sing in button ... passed in 1.463s
-    When i navigate to dresses section ... passed in 3.502s
-    When i add the Printed Dress to cart ... failed in 0.034s
+    Given web address "http://automationpractice.com/index.php" ... passed in 9.937s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... failed in 6.245s
+    When i press the sing in button ... skipped in 0.000s
+    When i navigate to dresses section ... skipped in 0.000s
+    When i add the Printed Dress to cart ... skipped in 0.000s
     When i verify the cart ... skipped in 0.000s
     Then the dress should be in the cart ... skipped in 0.000s
 

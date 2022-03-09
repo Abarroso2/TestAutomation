@@ -1,6 +1,6 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="order_history_detail.Order History Details" skipped="0" tests="1" time="11.771874" timestamp="2022-03-06T22:45:15.062793"><testcase classname="order_history_detail.Order History Details" name="Order History Details" status="failed" time="11.771874"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="order_history_detail.Order History Details" skipped="0" tests="1" time="37.343494" timestamp="2022-03-09T09:17:20.422024"><testcase classname="order_history_detail.Order History Details" name="Order History Details" status="failed" time="37.343494"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
 <![CDATA[
-Failing step: When i select an iten in the list and click on it datails ... failed in 0.034s
+Failing step: When i select an iten in the list and click on it datails ... failed in 0.046s
 Location: order_history_detail.feature:14
 Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
@@ -25,12 +25,12 @@ selenium.common.exceptions.ElementNotInteractableException: Message: element not
 <![CDATA[
 @scenario.begin
   Scenario: Order History Details
-    Given web address "http://automationpractice.com/index.php" ... passed in 4.050s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 2.308s
-    When i press the sing in button ... passed in 1.471s
-    When i navigate to my account page ... passed in 1.147s
-    When i navigate to my order history ... passed in 2.764s
-    When i select an iten in the list and click on it datails ... failed in 0.034s
+    Given web address "http://automationpractice.com/index.php" ... passed in 8.966s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 6.697s
+    When i press the sing in button ... passed in 7.131s
+    When i navigate to my account page ... passed in 4.114s
+    When i navigate to my order history ... passed in 10.389s
+    When i select an iten in the list and click on it datails ... failed in 0.046s
     Then i should be able to see the details about the item selected ... skipped in 0.000s
 
 @scenario.end

@@ -1,6 +1,6 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="order_proceed.Buying a dress" skipped="0" tests="1" time="11.41931" timestamp="2022-03-06T22:45:27.538314"><testcase classname="order_proceed.Buying a dress" name="Add a dress at the cart" status="failed" time="11.41931"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="order_proceed.Buying a dress" skipped="0" tests="1" time="24.777108" timestamp="2022-03-09T09:17:46.974402"><testcase classname="order_proceed.Buying a dress" name="Add a dress at the cart" status="failed" time="24.777108"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
 <![CDATA[
-Failing step: When i add the Printed Dress to cart ... failed in 0.052s
+Failing step: When i add the Printed Dress to cart ... failed in 0.037s
 Location: order_proceed.feature:12
 Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
@@ -25,11 +25,11 @@ selenium.common.exceptions.ElementNotInteractableException: Message: element not
 <![CDATA[
 @scenario.begin
   Scenario: Add a dress at the cart
-    Given web address "http://automationpractice.com/index.php" ... passed in 5.237s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 2.703s
-    When i press the sing in button ... passed in 1.509s
-    When i navigate to dresses section ... passed in 1.918s
-    When i add the Printed Dress to cart ... failed in 0.052s
+    Given web address "http://automationpractice.com/index.php" ... passed in 7.027s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 4.500s
+    When i press the sing in button ... passed in 5.663s
+    When i navigate to dresses section ... passed in 7.551s
+    When i add the Printed Dress to cart ... failed in 0.037s
     When i verify the cart ... skipped in 0.000s
     When i proceed with the shopping order ... skipped in 0.000s
     Then i should see the order confirmation page ... skipped in 0.000s

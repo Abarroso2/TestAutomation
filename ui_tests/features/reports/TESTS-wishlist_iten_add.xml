@@ -1,6 +1,6 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="wishlist_iten_add.Wishlist" skipped="0" tests="1" time="19.224653" timestamp="2022-03-06T22:46:14.243290"><testcase classname="wishlist_iten_add.Wishlist" name="Wishlist add iten" status="failed" time="19.224653"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="wishlist_iten_add.Wishlist" skipped="0" tests="1" time="11.448804" timestamp="2022-03-09T09:18:26.222288"><testcase classname="wishlist_iten_add.Wishlist" name="Wishlist add iten" status="failed" time="11.448804"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
 <![CDATA[
-Failing step: When i select a dress and add it to wishlist ... failed in 0.035s
+Failing step: When i select a dress and add it to wishlist ... failed in 0.039s
 Location: wishlist_iten_add.feature:11
 Traceback (most recent call last):
   File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
@@ -25,11 +25,11 @@ selenium.common.exceptions.ElementNotInteractableException: Message: element not
 <![CDATA[
 @scenario.begin
   Scenario: Wishlist add iten
-    Given web address "http://automationpractice.com/index.php" ... passed in 8.223s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 2.637s
-    When i press the sing in button ... passed in 2.098s
-    When i navigate to dress session ... passed in 6.231s
-    When i select a dress and add it to wishlist ... failed in 0.035s
+    Given web address "http://automationpractice.com/index.php" ... passed in 5.150s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 2.366s
+    When i press the sing in button ... passed in 1.697s
+    When i navigate to dress session ... passed in 2.196s
+    When i select a dress and add it to wishlist ... failed in 0.039s
     When i select a second dress and add it to wishlist ... skipped in 0.000s
     When i navigate to the wishlist ... skipped in 0.000s
     Then the itens should be in the wishlist ... skipped in 0.000s
