@@ -1,7 +1,7 @@
-# CIandT
+# Test Automation
 
 
-Welcome to the CI&T QA's Challenge
+Welcome to the Automation POC Challenge
 
 To run the tests:
 
