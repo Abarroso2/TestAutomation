@@ -1,7 +1,9 @@
 # Test Automation
 
 
-Welcome to the Automation POC Challenge
+Welcome to the Automation POC
+
+
 
 To run the tests:
 
@@ -15,6 +17,10 @@ alll the tests.feature in that folder
 
 It also should run at PyCharm.
 But actualy it was made in vscode for linux
+
+Requisits:
+
+pip install behave, requests, selenium
 
 Debian Linux
 
