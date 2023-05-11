@@ -1,4 +1,4 @@
-@web @ciandt
+@web
 Feature: Order History Details
 
    As an user logged i want to navigate to Order History page
@@ -6,7 +6,7 @@ Feature: Order History Details
    Acceptance criteria: the page Order History should display the orders at list and i should be able to se it's details 
 
     Scenario: Order History Details
-        Given web address "http://automationpractice.com/index.php"
+        Given web address "http://automationpractice.pl/index.php"
         Given login name "allan.barroso@outlook.com" and password newstar1541
         When i press the sing in button
         When i navigate to my account page

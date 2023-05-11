@@ -1,34 +1,34 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="wishlist_create.Wishlist" skipped="0" tests="1" time="5.740519" timestamp="2022-03-09T09:18:12.985326"><testcase classname="wishlist_create.Wishlist" name="Wishlist" status="failed" time="5.740519"><error message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[id=&quot;email&quot;]&quot;}&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="NoSuchElementException">
+<testsuite errors="1" failures="0" hostname="F680V9.0" name="wishlist_create.Wishlist" skipped="0" tests="1" time="17.163081" timestamp="2023-05-10T20:24:14.791160"><testcase classname="wishlist_create.Wishlist" name="Wishlist" status="failed" time="17.163081"><error message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='center_column']/div/div[2]/ul/li/a/span&quot;}&#10;  (Session info: chrome=112.0.5615.49)&#10;" type="NoSuchElementException">
 <![CDATA[
-Failing step: Given login name "allan.barroso@outlook.com" and password newstar1541 ... failed in 1.144s
-Location: wishlist_create.feature:8
+Failing step: When i navigate to wishlist ... failed in 10.485s
+Location: wishlist_create.feature:10
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
+  File "/home/abarroso/.local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
     match.run(runner.context)
-  File "/usr/local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
+  File "/home/abarroso/.local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
     self.func(context, *args, **kwargs)
-  File "steps/login.py", line 15, in step_impl
-    context.browser.find_element_by_id("email").click()
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 360, in find_element_by_id
-    return self.find_element(by=By.ID, value=id_)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
+  File "steps/wishlist.py", line 4, in step_impl
+    context.browser.find_element_by_xpath("//div[@id='center_column']/div/div[2]/ul/li/a/span").click()
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 978, in find_element
     'value': value})['value']
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="email"]"}
-  (Session info: chrome=98.0.4758.80)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='center_column']/div/div[2]/ul/li/a/span"}
+  (Session info: chrome=112.0.5615.49)
 
 ]]>
 </error><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Wishlist
-    Given web address "http://automationpractice.com/index.php" ... passed in 4.596s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... failed in 1.144s
-    When i press the sing in button ... skipped in 0.000s
-    When i navigate to wishlist ... skipped in 0.000s
+    Given web address "http://automationpractice.pl/index.php" ... passed in 4.207s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 1.479s
+    When i press the sing in button ... passed in 0.993s
+    When i navigate to wishlist ... failed in 10.485s
     When i create a new wishlist ... skipped in 0.000s
     Then the wishlist should be created ... skipped in 0.000s
 

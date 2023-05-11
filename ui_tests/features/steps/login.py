@@ -2,9 +2,9 @@ from behave import *
 from selenium.webdriver.common.keys import Keys
 import unittest
 
-MYSTORE_HOME = 'http://automationpractice.com/index.php'
+MYSTORE_HOME = 'http://automationpractice.pl/index.php'
 
-@given(u'web address "http://automationpractice.com/index.php"')
+@given(u'web address "http://automationpractice.pl/index.php"')
 def step_impl(context):
     context.browser.get(MYSTORE_HOME)
 

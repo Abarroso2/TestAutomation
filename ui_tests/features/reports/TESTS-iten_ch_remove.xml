@@ -1,35 +1,35 @@
-<testsuite errors="1" failures="0" hostname="abarroso.remote.csb" name="iten_ch_remove.Buying a dress remove item" skipped="0" tests="1" time="55.523803" timestamp="2022-03-09T09:14:28.009164"><testcase classname="iten_ch_remove.Buying a dress remove item" name="Add a dress at the cart" status="failed" time="55.523803"><error message="Message: element not interactable&#10;  (Session info: chrome=98.0.4758.80)&#10;" type="ElementNotInteractableException">
+<testsuite errors="1" failures="0" hostname="F680V9.0" name="iten_ch_remove.Buying a dress remove item" skipped="0" tests="1" time="18.371947" timestamp="2023-05-10T20:20:35.831587"><testcase classname="iten_ch_remove.Buying a dress remove item" name="Add a dress at the cart" status="failed" time="18.371947"><error message="Message: element not interactable&#10;  (Session info: chrome=112.0.5615.49)&#10;" type="ElementNotInteractableException">
 <![CDATA[
-Failing step: When i add the Printed Dress to cart ... failed in 0.034s
+Failing step: When i add the Printed Dress to cart ... failed in 10.057s
 Location: iten_ch_remove.feature:12
 Traceback (most recent call last):
-  File "/usr/local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
+  File "/home/abarroso/.local/lib/python3.6/site-packages/behave/model.py", line 1329, in run
     match.run(runner.context)
-  File "/usr/local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
+  File "/home/abarroso/.local/lib/python3.6/site-packages/behave/matchers.py", line 98, in run
     self.func(context, *args, **kwargs)
   File "steps/add_iten.py", line 8, in step_impl
     context.browser.find_element_by_xpath("//div[@id='center_column']/ul/li/div/div[2]/div[2]/a/span").click()
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 80, in click
     self._execute(Command.CLICK_ELEMENT)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webelement.py", line 633, in _execute
     return self._parent.execute(command, params)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
     self.error_handler.check_response(response)
-  File "/usr/local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+  File "/home/abarroso/.local/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=98.0.4758.80)
+  (Session info: chrome=112.0.5615.49)
 
 ]]>
 </error><system-out>
 <![CDATA[
 @scenario.begin
   Scenario: Add a dress at the cart
-    Given web address "http://automationpractice.com/index.php" ... passed in 12.556s
-    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 15.321s
-    When i press the sing in button ... passed in 16.586s
-    When i navigate to dresses section ... passed in 11.027s
-    When i add the Printed Dress to cart ... failed in 0.034s
+    Given web address "http://automationpractice.pl/index.php" ... passed in 4.194s
+    Given login name "allan.barroso@outlook.com" and password newstar1541 ... passed in 1.264s
+    When i press the sing in button ... passed in 0.995s
+    When i navigate to dresses section ... passed in 1.862s
+    When i add the Printed Dress to cart ... failed in 10.057s
     When i add the Printed Chiffon Dress to cart ... skipped in 0.000s
     When i remove Printed Dress from cart ... skipped in 0.000s
     When i verify the cart ... skipped in 0.000s
